@@ -13,6 +13,8 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "css-build": "node-sass --omit-source-map-url src/styles/sass/index.scss src/styles/css/index.css",
+    "css-watch": "npm run css-build -- --watch",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
